@@ -1,0 +1,23 @@
+This is a OpenCL wrapper for grab the API call from OpenCL
+
+
+------------------------------------
+Compile:
+
+ There are two arguments that can be defined that will be 
+ used into the compile processes
+OPENCL_LIBRARY
+OPENCL_INCLUDE 
+
+
+example:
+OPENCL_LIBRARY=/usr/lib OPENCL_INCLUDE=/home/lucas/NVIDIA_GPU_Computing_SDK/OpenCL/common/inc/ make
+
+Compiling options:
+debug; 
+release;           # default 
+------------------------------------
+Usage:
+
+LD_PRELOAD=libocl_profiler.so clinfo  
+------------------------------------
